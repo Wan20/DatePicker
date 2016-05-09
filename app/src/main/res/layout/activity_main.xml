@@ -9,8 +9,42 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.wansu.datepicker.MainActivity">
 
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <DatePicker
+                android:id="@+id/datePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/change_date_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change Date" />
+
+            <TextView
+                android:id="@+id/display_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display Date"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="fill_parent"
+                android:gravity="center|bottom"
+                android:text="okedroid.com"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
