@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginTop="5dp"
+    android:background="#f9e658"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context="com.example.wansu.datepicker.MainActivity">
@@ -16,6 +15,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
@@ -26,18 +26,18 @@
 
             <Button
                 android:id="@+id/change_date_button"
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="Change Date"
-                android:background="#FFFFA040"/>
+                android:background="#FFFFA040"
+                android:text="Change Date" />
 
             <TextView
                 android:id="@+id/display_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Display Date"
-                android:textSize="22sp" />
+                android:textSize="23sp" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
